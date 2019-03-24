@@ -1,0 +1,4 @@
+module agentcore {
+    umbrella "/Users/fumiyatanaka/Desktop/13inch_Working/ServerSideSwift/AThird/Server/.build/checkouts/omr-agentcore-8140066451998980305/src/agentcore/include"
+    export *
+}
