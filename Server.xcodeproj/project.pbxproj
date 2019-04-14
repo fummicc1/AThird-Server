@@ -32,6 +32,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		D330CFB8226307DD00424CA1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D330CFB7226307DD00424CA1 /* User.swift */; };
+		D371F11D2248CC08007B036D /* AthirdRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D371F11C2248CC08007B036D /* AthirdRouter.swift */; };
 		OBJ_1005 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_323 /* Package.swift */; };
 		OBJ_1010 /* SwiftDataCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* SwiftDataCollector.swift */; };
 		OBJ_1011 /* SwiftMetricsBAMConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* SwiftMetricsBAMConfig.swift */; };
@@ -2300,6 +2302,8 @@
 		"CloudFoundryEnv::CloudFoundryEnv::Product" /* CloudFoundryEnv.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CloudFoundryEnv.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Configuration::Configuration::Product" /* Configuration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Configuration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Cryptor::Cryptor::Product" /* Cryptor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cryptor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D330CFB7226307DD00424CA1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D371F11C2248CC08007B036D /* AthirdRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthirdRouter.swift; sourceTree = "<group>"; };
 		"FileKit::FileKit::Product" /* FileKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FileKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Health::Health::Product" /* Health.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Health.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"HeliumLogger::HeliumLogger::Product" /* HeliumLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HeliumLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -3104,6 +3108,7 @@
 		OBJ_12 /* Routes */ = {
 			isa = PBXGroup;
 			children = (
+				D371F11C2248CC08007B036D /* AthirdRouter.swift */,
 			);
 			path = Routes;
 			sourceTree = "<group>";
@@ -3821,7 +3826,7 @@
 			name = "omr-agentcore 3.2.4-swift4";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -3833,7 +3838,6 @@
 				OBJ_22 /* Dependencies */,
 				OBJ_328 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_50 /* mqttplugin */ = {
@@ -3975,6 +3979,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_9 /* Application.swift */,
+				D330CFB7226307DD00424CA1 /* User.swift */,
 				OBJ_10 /* InitializationError.swift */,
 				OBJ_11 /* Metrics.swift */,
 				OBJ_12 /* Routes */,
@@ -5120,7 +5125,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_328 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -5349,6 +5354,8 @@
 			files = (
 				OBJ_366 /* Application.swift in Sources */,
 				OBJ_367 /* InitializationError.swift in Sources */,
+				D371F11D2248CC08007B036D /* AthirdRouter.swift in Sources */,
+				D330CFB8226307DD00424CA1 /* User.swift in Sources */,
 				OBJ_368 /* Metrics.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
