@@ -56,15 +56,6 @@
         }
       },
       {
-        "package": "Health",
-        "repositoryURL": "https://github.com/IBM-Swift/Health.git",
-        "state": {
-          "branch": null,
-          "revision": "111fd53f30b0a4bab139aea5eb2267853c007946",
-          "version": "1.0.4"
-        }
-      },
-      {
         "package": "HeliumLogger",
         "repositoryURL": "https://github.com/IBM-Swift/HeliumLogger.git",
         "state": {
@@ -105,8 +96,8 @@
         "repositoryURL": "https://github.com/IBM-Swift/Kitura-WebSocket.git",
         "state": {
           "branch": null,
-          "revision": "1c6d026a2775285d6bb7a27217683c8451221190",
-          "version": "2.1.1"
+          "revision": "2595b0a9a4579e7c4abc61c52c588c4fcf988232",
+          "version": "2.1.2"
         }
       },
       {
