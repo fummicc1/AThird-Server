@@ -29,13 +29,7 @@ public class App {
         initializeSwiftMetrics()
     }
     
-    func postInit() throws {
-        // Endpoints
-        initializeAThirdRoute(app: self)
-    }
-    
-    public func run() throws {
-        try postInit()
+    public func run() {        
         server = Kitura.addHTTPServer(onPort: 8080, with: router)        
         Kitura.run()
     }

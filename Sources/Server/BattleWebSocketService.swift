@@ -14,7 +14,7 @@ class BattleWebSocketService: WebSocketService {
         for (index, room) in roomArray.enumerated() {
             if room.count == 1 {
                 roomArray[index].append(connection)
-                room[0].send(message: "Opponent Found!!")
+                room[0].send(message: "Opponent Found!! You are Host!")
                 connection.send(message: "Opponent Found!!")
                 break
             } else if room.count == 2 {
@@ -43,15 +43,26 @@ class BattleWebSocketService: WebSocketService {
             from.close(reason: .invalidDataType, description: "Battle-Server Only Accepts User Model Data.")
             return
         }
-        for room in roomArray {
-            if room[0].id == from.id {
-                room[1].send(message: message)
-            } else if room[1].id == from.id {
-                room[0].send(message: message)
-            }
+        if let to = searchOpponent(from: from).0 {
+            to.send(message: message)
         }
     }
     
     func received(message: String, from: WebSocketConnection) {
+        guard let to = searchOpponent(from: from).0 else {
+            return
+        }
+        to.send(message: message)
+    }
+    
+    func searchOpponent(from: WebSocketConnection) -> (WebSocketConnection?, Bool) {
+        for room in roomArray {
+            if room[0].id == from.id {
+                return (room[1], true)
+            } else if room[1].id == from.id {
+                return (room[0], false)
+            }
+        }
+        return (nil, false)
     }
 }

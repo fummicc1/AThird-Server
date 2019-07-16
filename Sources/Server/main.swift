@@ -8,10 +8,6 @@ import KituraNet
 
 WebSocket.register(service: BattleWebSocketService(), onPath: "battle")
 
-do {
-    HeliumLogger.use(LoggerMessageType.info)
-    let app = App()
-    try app.run()
-} catch let error {
-    Log.error(error.localizedDescription)
-}
+HeliumLogger.use(LoggerMessageType.info)
+let app = App()
+app.run()
