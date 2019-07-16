@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Server::Application"
-               BuildableName = "Application.framework"
-               BlueprintName = "Application"
+               BlueprintIdentifier = "Server::Server"
+               BuildableName = "Server"
+               BlueprintName = "Server"
                ReferencedContainer = "container:Server.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,9 +28,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Server::Server"
-               BuildableName = "Server"
-               BlueprintName = "Server"
+               BlueprintIdentifier = "Server::Application"
+               BuildableName = "Application.framework"
+               BlueprintName = "Application"
                ReferencedContainer = "container:Server.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,16 +42,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "Server::ApplicationTests"
-               BuildableName = "ApplicationTests.xctest"
-               BlueprintName = "ApplicationTests"
-               ReferencedContainer = "container:Server.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <AdditionalOptions>
       </AdditionalOptions>
@@ -69,9 +59,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "Server::Application"
-            BuildableName = "Application.framework"
-            BlueprintName = "Application"
+            BlueprintIdentifier = "Server::Server"
+            BuildableName = "Server"
+            BlueprintName = "Server"
             ReferencedContainer = "container:Server.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

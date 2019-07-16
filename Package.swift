@@ -12,8 +12,7 @@ let package = Package(
     ],
     targets: [
       .target(name: "Server", dependencies: [ .target(name: "Application"), "Kitura" , "HeliumLogger", "Kitura-WebSocket"]),
-      .target(name: "Application", dependencies: [ "Kitura", "CloudEnvironment","SwiftMetrics", "Health", "Kitura-WebSocket",
+      .target(name: "Application", dependencies: [ "Kitura", "CloudEnvironment","SwiftMetrics", "Kitura-WebSocket",
       ]),
-      .testTarget(name: "ApplicationTests" , dependencies: [.target(name: "Application"), "Kitura","HeliumLogger" ])
     ]
 )

@@ -4,7 +4,6 @@ import LoggerAPI
 import Configuration
 import CloudEnvironment
 import KituraContracts
-import Health
 import KituraWebSocket
 import KituraNet
 
@@ -37,7 +36,7 @@ public class App {
     
     public func run() throws {
         try postInit()
-        server = Kitura.addHTTPServer(onPort: 8080, with: router)                
+        server = Kitura.addHTTPServer(onPort: 8080, with: router)        
         Kitura.run()
     }
 }
