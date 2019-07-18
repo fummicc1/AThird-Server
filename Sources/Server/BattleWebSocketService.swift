@@ -39,12 +39,12 @@ class BattleWebSocketService: WebSocketService {
     }
     
     func received(message: Data, from: WebSocketConnection) {
-        guard let _ = try? JSONDecoder().decode(User.self, from: message) else {
-            from.close(reason: .invalidDataType, description: "Battle-Server Only Accepts User Model Data.")
-            return
-        }
-        if let to = searchOpponent(from: from).0 {
+        if let _ = try? JSONDecoder().decode(User.self, from: message), let to = searchOpponent(from: from).0 {
             to.send(message: message)
+        } else if let _ = try? JSONDecoder().decode(Result.self, from: message), let to = searchOpponent(from: from).0 {
+            to.send(message: message)
+        } else {
+            from.close(reason: .invalidDataType, description: "Battle-Server Only Accepts Model Data.")            
         }
     }
     

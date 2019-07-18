@@ -159,7 +159,6 @@
 		OBJ_1303 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_97 /* Package.swift */; };
 		OBJ_367 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Application.swift */; };
 		OBJ_368 /* InitializationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* InitializationError.swift */; };
-		OBJ_369 /* AthirdRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* AthirdRouter.swift */; };
 		OBJ_370 /* InitializeSwiftMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* InitializeSwiftMetrics.swift */; };
 		OBJ_371 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* User.swift */; };
 		OBJ_373 /* SwiftMetricsPrometheus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftMetrics::SwiftMetricsPrometheus::Product" /* SwiftMetricsPrometheus.framework */; };
@@ -2045,7 +2044,6 @@
 		OBJ_117 /* KeyDerivation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyDerivation.swift; sourceTree = "<group>"; };
 		OBJ_118 /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
 		OBJ_119 /* SSLPointerTricks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLPointerTricks.swift; sourceTree = "<group>"; };
-		OBJ_12 /* AthirdRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthirdRouter.swift; sourceTree = "<group>"; };
 		OBJ_120 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		OBJ_121 /* StreamCryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamCryptor.swift; sourceTree = "<group>"; };
 		OBJ_122 /* Updatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updatable.swift; sourceTree = "<group>"; };
@@ -2725,7 +2723,6 @@
 		OBJ_11 /* Routes */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_12 /* AthirdRouter.swift */,
 				OBJ_13 /* InitializeSwiftMetrics.swift */,
 			);
 			path = Routes;
@@ -4887,7 +4884,6 @@
 			files = (
 				OBJ_367 /* Application.swift in Sources */,
 				OBJ_368 /* InitializationError.swift in Sources */,
-				OBJ_369 /* AthirdRouter.swift in Sources */,
 				OBJ_370 /* InitializeSwiftMetrics.swift in Sources */,
 				OBJ_371 /* User.swift in Sources */,
 			);

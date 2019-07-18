@@ -3,11 +3,14 @@ import Foundation
 struct User: Codable {
     var name: String
     var joker: Int
-    var score: Score?
     var selectedCardTag: Int?
+    var isAttacking: Bool
 }
 
-struct Score: Codable {
-    var date: Date
-    var value: Int
+struct Result: Codable {
+    var answer: Int
+    var selectTag: Int
+    var isCorrect: Bool {
+        return answer == selectTag
+    }
 }
