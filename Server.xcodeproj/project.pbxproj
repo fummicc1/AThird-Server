@@ -21,7 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		D3DF099122DCD62900F0A281 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* User.swift */; };
+		D349A59122E0D8F200ADB095 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D349A58F22E0D8DD00ADB095 /* User.swift */; };
 		OBJ_1000 /* Kitura.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Kitura::Kitura::Product" /* Kitura.framework */; };
 		OBJ_1001 /* TypeDecoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "TypeDecoder::TypeDecoder::Product" /* TypeDecoder.framework */; };
 		OBJ_1002 /* KituraContracts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "KituraContracts::KituraContracts::Product" /* KituraContracts.framework */; };
@@ -160,7 +160,6 @@
 		OBJ_367 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* Application.swift */; };
 		OBJ_368 /* InitializationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* InitializationError.swift */; };
 		OBJ_370 /* InitializeSwiftMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* InitializeSwiftMetrics.swift */; };
-		OBJ_371 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* User.swift */; };
 		OBJ_373 /* SwiftMetricsPrometheus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftMetrics::SwiftMetricsPrometheus::Product" /* SwiftMetricsPrometheus.framework */; };
 		OBJ_374 /* SwiftMetricsREST.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftMetrics::SwiftMetricsREST::Product" /* SwiftMetricsREST.framework */; };
 		OBJ_375 /* SwiftMetricsDash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftMetrics::SwiftMetricsDash::Product" /* SwiftMetricsDash.framework */; };
@@ -2016,6 +2015,7 @@
 		"CloudFoundryEnv::CloudFoundryEnv::Product" /* CloudFoundryEnv.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CloudFoundryEnv.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Configuration::Configuration::Product" /* Configuration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Configuration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Cryptor::Cryptor::Product" /* Cryptor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cryptor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D349A58F22E0D8DD00ADB095 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		"FileKit::FileKit::Product" /* FileKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FileKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"HeliumLogger::HeliumLogger::Product" /* HeliumLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HeliumLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Kitura-TemplateEngine::KituraTemplateEngine::Product" /* KituraTemplateEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KituraTemplateEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2063,7 +2063,6 @@
 		OBJ_137 /* MySQLCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySQLCredentials.swift; sourceTree = "<group>"; };
 		OBJ_138 /* NaturalLanguageUnderstandingCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaturalLanguageUnderstandingCredentials.swift; sourceTree = "<group>"; };
 		OBJ_139 /* ObjectStorageCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectStorageCredentials.swift; sourceTree = "<group>"; };
-		OBJ_14 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		OBJ_140 /* PostgreSQLCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostgreSQLCredentials.swift; sourceTree = "<group>"; };
 		OBJ_141 /* PushSDKCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushSDKCredentials.swift; sourceTree = "<group>"; };
 		OBJ_142 /* RedisCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedisCredentials.swift; sourceTree = "<group>"; };
@@ -2817,6 +2816,7 @@
 		OBJ_15 /* Server */ = {
 			isa = PBXGroup;
 			children = (
+				D349A58F22E0D8DD00ADB095 /* User.swift */,
 				OBJ_16 /* BattleWebSocketService.swift */,
 				OBJ_17 /* main.swift */,
 			);
@@ -3584,7 +3584,6 @@
 			children = (
 				OBJ_9 /* Application.swift */,
 				OBJ_10 /* InitializationError.swift */,
-				OBJ_14 /* User.swift */,
 				OBJ_11 /* Routes */,
 			);
 			name = Application;
@@ -4885,7 +4884,6 @@
 				OBJ_367 /* Application.swift in Sources */,
 				OBJ_368 /* InitializationError.swift in Sources */,
 				OBJ_370 /* InitializeSwiftMetrics.swift in Sources */,
-				OBJ_371 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5253,7 +5251,7 @@
 			files = (
 				OBJ_835 /* BattleWebSocketService.swift in Sources */,
 				OBJ_836 /* main.swift in Sources */,
-				D3DF099122DCD62900F0A281 /* User.swift in Sources */,
+				D349A59122E0D8F200ADB095 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
