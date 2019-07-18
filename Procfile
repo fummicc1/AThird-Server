@@ -1,1 +1,1 @@
-web: .build/release/AThird-Server
+web: .build/release/AThird-server-swift
