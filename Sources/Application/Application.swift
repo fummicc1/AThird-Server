@@ -24,6 +24,7 @@ public class App {
     }
     
     public func run() {
+        initializeConnectWebSocket(router: router)
         let port = Int(ProcessInfo.processInfo.environment["PORT"] ?? "8080") ?? 8080
         server = Kitura.addHTTPServer(onPort: port, with: router)
         Kitura.run()
