@@ -7,12 +7,6 @@ import KituraContracts
 import KituraWebSocket
 import KituraNet
 
-public class BattleServerDelegate: ServerDelegate {
-    public func handle(request: ServerRequest, response: ServerResponse) {
-        
-    }
-}
-
 public let projectPath = ConfigurationManager.BasePath.project.path
 
 public class App {
