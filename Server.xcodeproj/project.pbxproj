@@ -22,7 +22,6 @@
 
 /* Begin PBXBuildFile section */
 		D349A59122E0D8F200ADB095 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D349A58F22E0D8DD00ADB095 /* User.swift */; };
-		D3A19AC622E0E617002A40C9 /* initializeConnectWebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A19AC522E0E617002A40C9 /* initializeConnectWebSocket.swift */; };
 		OBJ_1000 /* Kitura.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Kitura::Kitura::Product" /* Kitura.framework */; };
 		OBJ_1001 /* TypeDecoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "TypeDecoder::TypeDecoder::Product" /* TypeDecoder.framework */; };
 		OBJ_1002 /* KituraContracts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "KituraContracts::KituraContracts::Product" /* KituraContracts.framework */; };
@@ -2017,7 +2016,6 @@
 		"Configuration::Configuration::Product" /* Configuration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Configuration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Cryptor::Cryptor::Product" /* Cryptor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Cryptor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D349A58F22E0D8DD00ADB095 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		D3A19AC522E0E617002A40C9 /* initializeConnectWebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = initializeConnectWebSocket.swift; sourceTree = "<group>"; };
 		"FileKit::FileKit::Product" /* FileKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FileKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"HeliumLogger::HeliumLogger::Product" /* HeliumLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HeliumLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Kitura-TemplateEngine::KituraTemplateEngine::Product" /* KituraTemplateEngine.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KituraTemplateEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -2725,7 +2723,6 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_13 /* InitializeSwiftMetrics.swift */,
-				D3A19AC522E0E617002A40C9 /* initializeConnectWebSocket.swift */,
 			);
 			path = Routes;
 			sourceTree = "<group>";
@@ -4884,7 +4881,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				D3A19AC622E0E617002A40C9 /* initializeConnectWebSocket.swift in Sources */,
 				OBJ_367 /* Application.swift in Sources */,
 				OBJ_368 /* InitializationError.swift in Sources */,
 				OBJ_370 /* InitializeSwiftMetrics.swift in Sources */,
