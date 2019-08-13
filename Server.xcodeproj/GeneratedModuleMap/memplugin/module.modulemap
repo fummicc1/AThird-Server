@@ -1,4 +1,4 @@
 module memplugin {
-    umbrella "/Users/fumiyatanaka/Desktop/13inchFolder/ServerSideSwift/AThird-Server/.build/checkouts/omr-agentcore/src/memplugin/include"
+    umbrella "/Users/fumiyatanaka/Desktop/13inch_latest/LiT!/iPhone/Any/AThird-Server/.build/checkouts/omr-agentcore/src/memplugin/include"
     export *
 }

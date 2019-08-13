@@ -6,7 +6,7 @@ import Application
 import KituraWebSocket
 import KituraNet
 
-WebSocket.register(service: BattleWebSocketService(), onPath: "connectWebSocket")
+WebSocket.register(service: BattleWebSocketService(), onPath: "connectwebsocket")
 
 HeliumLogger.use(LoggerMessageType.info)
 let app = App()
