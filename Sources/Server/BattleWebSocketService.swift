@@ -38,7 +38,7 @@ class BattleWebSocketService: WebSocketService {
         connections.removeValue(forKey: connection.id)
     }
     
-    func received(message: Data, from: WebSocketConnection) {
+    func received(message: Data, from: WebSocketConnection) {        
         if let _ = try? JSONDecoder().decode(User.self, from: message), let to = searchOpponent(from: from).0 {
             to.send(message: message)
         } else if let _ = try? JSONDecoder().decode(Result.self, from: message), let to = searchOpponent(from: from).0 {

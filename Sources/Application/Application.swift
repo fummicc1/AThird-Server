@@ -23,10 +23,9 @@ public class App {
         initializeSwiftMetrics()
     }
     
-    public func run() {
-        initializeConnectWebSocket(router: router)
+    public func run() {        
         let port = Int(ProcessInfo.processInfo.environment["PORT"] ?? "8080") ?? 8080
-        server = Kitura.addHTTPServer(onPort: port, with: router)
+        server = Kitura.addHTTPServer(onPort: port, with: router)        
         Kitura.run()
     }
 }
